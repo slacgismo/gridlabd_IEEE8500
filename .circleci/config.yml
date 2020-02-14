@@ -20,12 +20,6 @@ jobs:
          command: |
            gridlabd --version
            mkdir -p final_output
-           git clone https://github.com/dchassin/gridlabd.git
-           cd /root/project/gridlabd
-           git checkout nitya/ieee8500
-           cd models/ieee8500
-           ls
-           mkdir -p final_output
            more config/local.glm
            gridlabd ieee8500.glm
 
